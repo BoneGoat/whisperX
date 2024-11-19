@@ -36,13 +36,13 @@ DEFAULT_ALIGN_MODELS_HF = {
     "nl": "jonatasgrosman/wav2vec2-large-xlsr-53-dutch",
     "uk": "Yehor/wav2vec2-xls-r-300m-uk-with-small-lm",
     "pt": "jonatasgrosman/wav2vec2-large-xlsr-53-portuguese",
-    "ar": "jonatasgrosman/wav2vec2-large-xlsr-53-arabic",
+    "ar": os.path.join(os.environ.get("MODELS_BASE_PATH"), "wav2vec2-large-xlsr-53-arabic"),
     "cs": "comodoro/wav2vec2-xls-r-300m-cs-250",
-    "ru": "jonatasgrosman/wav2vec2-large-xlsr-53-russian",
+    "ru": os.path.join(os.environ.get("MODELS_BASE_PATH"), "wav2vec2-large-xlsr-53-russian"),
     "pl": "jonatasgrosman/wav2vec2-large-xlsr-53-polish",
     "hu": "jonatasgrosman/wav2vec2-large-xlsr-53-hungarian",
-    "fi": "jonatasgrosman/wav2vec2-large-xlsr-53-finnish",
-    "fa": "jonatasgrosman/wav2vec2-large-xlsr-53-persian",
+    "fi": os.path.join(os.environ.get("MODELS_BASE_PATH"), "wav2vec2-large-xlsr-53-finnish"),
+    "fa": os.path.join(os.environ.get("MODELS_BASE_PATH"), "wav2vec2-large-xlsr-53-persian"),
     "el": "jonatasgrosman/wav2vec2-large-xlsr-53-greek",
     "tr": "mpoyraz/wav2vec2-xls-r-300m-cv7-turkish",
     "da": "saattrupdan/wav2vec2-xls-r-300m-ftspeech",
@@ -59,7 +59,8 @@ DEFAULT_ALIGN_MODELS_HF = {
     "sk": "comodoro/wav2vec2-xls-r-300m-sk-cv8",
     "sl": "anton-l/wav2vec2-large-xlsr-53-slovenian",
     "hr": "classla/wav2vec2-xls-r-parlaspeech-hr",
-    "sv": os.environ.get("SV_ALIGN_MODEL_PATH"),
+    "sv": os.path.join(os.environ.get("MODELS_BASE_PATH"), "wav2vec2-large-xlsr-53-swedish"),
+    "uk": os.path.join(os.environ.get("MODELS_BASE_PATH"), "wav2vec2-large-xlsr-53-ukrainian"),
 }
 
 
