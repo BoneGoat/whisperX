@@ -5,6 +5,7 @@ C. Max Bain
 from dataclasses import dataclass
 from typing import Iterable, Union, List
 
+import os
 import numpy as np
 import pandas as pd
 import torch
@@ -58,6 +59,7 @@ DEFAULT_ALIGN_MODELS_HF = {
     "sk": "comodoro/wav2vec2-xls-r-300m-sk-cv8",
     "sl": "anton-l/wav2vec2-large-xlsr-53-slovenian",
     "hr": "classla/wav2vec2-xls-r-parlaspeech-hr",
+    "sv": os.environ.get("SV_ALIGN_MODEL_PATH"),
 }
 
 

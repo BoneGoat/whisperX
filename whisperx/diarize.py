@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import pandas as pd
 from pyannote.audio import Pipeline
@@ -10,7 +11,7 @@ from .audio import load_audio, SAMPLE_RATE
 class DiarizationPipeline:
     def __init__(
         self,
-        model_name="pyannote/speaker-diarization-3.1",
+        model_name=os.environ.get("SPEAKER_DIARIZATION_3_1_PATH"),
         use_auth_token=None,
         device: Optional[Union[str, torch.device]] = "cpu",
     ):
